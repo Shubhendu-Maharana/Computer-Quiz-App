@@ -9,12 +9,12 @@ const Result = ({ correctAnswers, totalQuestions }) => {
 
   const handleLogout = () => {
     localStorage.removeItem("username");
-    // setRedirectToHomepage(true);
+    setRedirectToHomepage(true);
   };
 
-  // if (redirectToHomepage) {
-  //   return <Navigate to="/Computer-Quiz-App/" />;
-  // }
+  if (redirectToHomepage) {
+    return <Navigate to="/Computer-Quiz-App/" />;
+  }
 
   const progressWidth = (100 / totalQuestions) * correctAnswers + "%";
 
