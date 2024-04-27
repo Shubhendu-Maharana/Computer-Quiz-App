@@ -49,7 +49,7 @@ const Result = ({ correctAnswers, totalQuestions }) => {
               Logout
             </button>
             <button
-              to="/homepage"
+              to="/computer-quiz-app/homepage"
               className="btn bg-pink-500 text-white hover:bg-purple-500 hover:text-black"
             >
               Retry

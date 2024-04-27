@@ -12,7 +12,7 @@ const PublicAccess = () => {
   };
 
   if (redirectToHomepage) {
-    return <Navigate to="/homepage" />;
+    return <Navigate to="/computer-quiz-app/homepage" />;
   }
 
   return (
