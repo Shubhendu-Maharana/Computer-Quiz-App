@@ -19,7 +19,7 @@ const Homepage = () => {
   }, []);
 
   if (redirectToLogin) {
-    return <Navigate to="/" />;
+    return <Navigate to="/Computer-Quiz-App/" />;
   }
 
   const handleOptionClick = (questionId, option) => {
