@@ -3,17 +3,26 @@ import Emoji from "../Utils/Emoji";
 import { Navigate } from "react-router-dom";
 
 const Result = ({ correctAnswers, totalQuestions }) => {
-  const [redirectToHomepage, setRedirectToHomepage] = useState(false);
+  const [redirectToLoginPage, setRedirectToLoginPage] = useState(false);
+  const [redirectToRegen, setRedirectToReGen] = useState(false);
   const resultPercentage = (correctAnswers / totalQuestions) * 100;
   const username = localStorage.getItem("username");
 
   const handleLogout = () => {
     localStorage.removeItem("username");
-    setRedirectToHomepage(true);
+    setRedirectToLoginPage(true);
   };
 
-  if (redirectToHomepage) {
+  if (redirectToLoginPage) {
     return <Navigate to="/Computer-Quiz-App/" />;
+  }
+
+  const handleReGen = () => {
+    setRedirectToReGen(true);
+  };
+
+  if (redirectToRegen) {
+    return <Navigate to="/Computer-Quiz-App/Quiz/" />;
   }
 
   const progressWidth = (100 / totalQuestions) * correctAnswers + "%";
@@ -49,10 +58,10 @@ const Result = ({ correctAnswers, totalQuestions }) => {
               Logout
             </button>
             <button
-              to="/Computer-Quiz-App/homepage"
+              onClick={handleReGen}
               className="btn bg-pink-500 text-white hover:bg-purple-500 hover:text-black"
             >
-              Retry
+              Re-Gen
             </button>
           </form>
         </div>

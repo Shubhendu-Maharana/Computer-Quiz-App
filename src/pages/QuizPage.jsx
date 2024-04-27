@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
-import questionData from "../components/Questions/Questions.json";
 import Result from "../components/Result/Result";
 import { Navigate } from "react-router-dom";
+import { useContext } from "react";
+import QuizDataContext from "../components/Utils/Context/QuizDataContext";
 
-const Homepage = () => {
+const QuizPage = () => {
+  const { quizData } = useContext(QuizDataContext);
   const [selectedOptions, setSelectedOptions] = useState({});
   const [currentIndex, setCurrentIndex] = useState(0);
   const [submitted, setSubmitted] = useState(false);
@@ -31,7 +33,7 @@ const Homepage = () => {
     }
   };
 
-  const questions = questionData;
+  const questions = quizData;
 
   const handleNextOrSubmit = () => {
     if (currentIndex === questions.length - 1) {
@@ -71,8 +73,8 @@ const Homepage = () => {
         correctAnswers={correctAnswers}
         totalQuestions={questions.length}
       />
-      <div className="p-8 lg:p-6 lg:w-1/2 flex flex-col gap-5 lg:gap-2 bg-[#2B3D41] text-center">
-        <p className="text-2xl">Computer Quiz</p>
+      <div className="p-8 lg:p-6 w-full flex flex-col gap-5 lg:gap-1 bg-[#2B3D41] text-center">
+        <p className="text-2xl">Your Progress</p>
         <div className="rounded-full h-2.5 bg-[#DFBBB1]">
           <div
             className="bg-[#F56476] h-2.5 rounded-full"
@@ -80,8 +82,8 @@ const Homepage = () => {
           ></div>
         </div>
       </div>
-      <div className="p-5 h-full min-w-96 flex flex-col items-center">
-        <div className="">
+      <div className="p-3 h-full min-w-96 flex flex-col lg:w-full lg:justify-evenly items-center">
+        <div>
           <p className="text-black text-md lg:text-lg text-center mb-5">
             Question {questions[currentIndex].id} out of {questions.length}
           </p>
@@ -91,7 +93,7 @@ const Homepage = () => {
         </div>
         <form
           autoComplete="off"
-          className="form-control lg:min-w-96 w-full py-5 px-2.5 h-max gap-5 mt-auto text-center text-black justify-evenly *:rounded-xl *:p-5 *:w-full lg:items-center lg:*:cursor-pointer text-xl"
+          className="form-control lg:w-1/2 w-full py-5 px-2.5 h-max gap-5 mt-auto text-center text-black justify-evenly *:rounded-xl *:p-5 *:w-full lg:items-center lg:*:cursor-pointer text-xl"
         >
           {questions[currentIndex].options.map((option, index) => (
             <label
@@ -150,4 +152,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default QuizPage;

@@ -1,17 +1,22 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import PublicAccess from "./pages/PublicAccess";
-import Homepage from "./pages/Homepage";
+import QuizPage from "./pages/QuizPage";
+import Quiz from "./pages/Quiz";
+import { QuizDataProvider } from "./components/Utils/Context/QuizDataContext";
 // import SignupAndLoginPage from "./components/pages/Signup/SignupAndLoginPage";
 
 function App() {
   return (
-    <>
-      <Routes>
-        <Route path="/Computer-Quiz-App/" element={<PublicAccess />} />
-        <Route path="/Computer-Quiz-App/homepage" element={<Homepage />} />
-      </Routes>
-    </>
+    <QuizDataProvider>
+      <>
+        <Routes>
+          <Route path="/Computer-Quiz-App/" element={<PublicAccess />} />
+          <Route path="/Computer-Quiz-App/Quiz" element={<Quiz />} />
+          <Route path="/Computer-Quiz-App/Quizpage" element={<QuizPage />} />
+        </Routes>
+      </>
+    </QuizDataProvider>
   );
 }
 

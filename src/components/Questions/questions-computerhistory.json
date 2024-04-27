@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "question": "When was the first computer invented?",
+        "options": ["1950", "1940", "1960", "1930"],
+        "answer": "1940"
+    },
+    {
+        "id": 2,
+        "question": "Which computer is known as the first electronic general-purpose computer?",
+        "options": ["ENIAC", "UNIVAC", "EDVAC", "Harvard Mark I"],
+        "answer": "ENIAC"
+    },
+    {
+        "id": 3,
+        "question": "Who is considered the father of computers?",
+        "options": ["Charles Babbage", "Alan Turing", "John von Neumann", "Hermann Hollerith"],
+        "answer": "Charles Babbage"
+    },
+    {
+        "id": 4,
+        "question": "Which company introduced the first commercial computer in 1951?",
+        "options": ["IBM", "Microsoft", "Apple", "Google"],
+        "answer": "IBM"
+    },
+    {
+        "id": 5,
+        "question": "Who coined the term 'bug' for a computer error?",
+        "options": ["Grace Hopper", "Ada Lovelace", "John Mauchly", "Douglas Engelbart"],
+        "answer": "Grace Hopper"
+    },
+    {
+        "id": 6,
+        "question": "What was the name of the first personal computer introduced by IBM in 1981?",
+        "options": ["IBM PC", "Apple II", "Compaq Portable", "Atari 800XL"],
+        "answer": "IBM PC"
+    },
+    {
+        "id": 7,
+        "question": "Which operating system was introduced by Microsoft in the 1980s?",
+        "options": ["MS-DOS", "Windows 95", "Mac OS", "Linux"],
+        "answer": "MS-DOS"
+    },
+    {
+        "id": 8,
+        "question": "Who developed the World Wide Web in 1989?",
+        "options": ["Tim Berners-Lee", "Steve Jobs", "Bill Gates", "Larry Page"],
+        "answer": "Tim Berners-Lee"
+    },
+    {
+        "id": 9,
+        "question": "What was the name of the first graphical web browser created in 1993?",
+        "options": ["Mosaic", "Netscape Navigator", "Internet Explorer", "Chrome"],
+        "answer": "Mosaic"
+    },
+    {
+        "id": 10,
+        "question": "Which programming language was developed by Bjarne Stroustrup in 1979?",
+        "options": ["C", "Python", "Java", "C++"],
+        "answer": "C++"
+    },
+    {
+        "id": 11,
+        "question": "Who co-founded Apple Inc. along with Steve Jobs?",
+        "options": ["Steve Wozniak", "Bill Gates", "Larry Page", "Mark Zuckerberg"],
+        "answer": "Steve Wozniak"
+    },
+    {
+        "id": 12,
+        "question": "What was the name of the first successful personal computer introduced in 1977?",
+        "options": ["Apple II", "IBM PC", "Commodore PET", "Altair 8800"],
+        "answer": "Apple II"
+    },
+    {
+        "id": 13,
+        "question": "Who is known for founding the Hewlett-Packard Company?",
+        "options": ["William Hewlett", "Dave Packard", "Steve Jobs", "Larry Page"],
+        "answer": "William Hewlett"
+    },
+    {
+        "id": 14,
+        "question": "Which company introduced the first laptop computer in 1981?",
+        "options": ["Osborne Computer Corporation", "Compaq", "IBM", "Apple"],
+        "answer": "Osborne Computer Corporation"
+    },
+    {
+        "id": 15,
+        "question": "What was the name of the first high-level programming language developed in the 1950s?",
+        "options": ["FORTRAN", "COBOL", "BASIC", "Pascal"],
+        "answer": "FORTRAN"
+    },
+    {
+        "id": 16,
+        "question": "Who wrote the first computer virus in 1983?",
+        "options": ["Rich Skrenta", "Robert Morris", "Fred Cohen", "Kevin Mitnick"],
+        "answer": "Rich Skrenta"
+    },
+    {
+        "id": 17,
+        "question": "Which computer introduced the first computer mouse in 1964?",
+        "options": ["Xerox Alto", "Apple Lisa", "IBM 5100", "PDP-1"],
+        "answer": "Xerox Alto"
+    },
+    {
+        "id": 18,
+        "question": "What was the name of the first search engine created in 1990?",
+        "options": ["Archie", "Yahoo", "Google", "Bing"],
+        "answer": "Archie"
+    },
+    {
+        "id": 19,
+        "question": "Who is known for creating the Linux operating system in 1991?",
+        "options": ["Linus Torvalds", "Richard Stallman", "Eric S. Raymond", "Andrew S. Tanenbaum"],
+        "answer": "Linus Torvalds"
+    },
+    {
+        "id": 20,
+        "question": "What was the name of the first video game ever created in 1958?",
+        "options": ["Tennis for Two", "Pong", "Spacewar!", "Adventure"],
+        "answer": "Tennis for Two"
+    },
+    {
+        "id": 21,
+        "question": "Which company manufactured the first computer hard drive in 1956?",
+        "options": ["IBM", "Seagate", "Western Digital", "Toshiba"],
+        "answer": "IBM"
+    },
+    {
+        "id": 22,
+        "question": "Who co-founded Microsoft with Bill Gates?",
+        "options": ["Paul Allen", "Steve Jobs", "Larry Ellison", "Mark Zuckerberg"],
+        "answer": "Paul Allen"
+    },
+    {
+        "id": 23,
+        "question": "What was the name of the first computer to defeat a world chess champion in 1997?",
+        "options": ["Deep Blue", "Watson", "AlphaGo", "Hal 9000"],
+        "answer": "Deep Blue"
+    },
+    {
+        "id": 24,
+        "question": "Who is known for creating the Java programming language in 1995?",
+        "options": ["James Gosling", "Guido van Rossum", "Brendan Eich", "Anders Hejlsberg"],
+        "answer": "James Gosling"
+    },
+    {
+        "id": 25,
+        "question": "What was the name of the first mobile phone with internet capabilities introduced in 1996?",
+        "options": ["Nokia 9000 Communicator", "Motorola DynaTAC 8000X", "Apple iPhone", "BlackBerry 850"],
+        "answer": "Nokia 9000 Communicator"
+    },
+    {
+        "id": 26,
+        "question": "Which company introduced the first digital camera in 1975?",
+        "options": ["Kodak", "Canon", "Sony", "Nikon"],
+        "answer": "Kodak"
+    },
+    {
+        "id": 27,
+        "question": "Who co-founded the social networking site Facebook in 2004?",
+        "options": ["Mark Zuckerberg", "Jack Dorsey", "Reid Hoffman", "Evan Williams"],
+        "answer": "Mark Zuckerberg"
+    },
+    {
+        "id": 28,
+        "question": "What was the name of the first computer to run on a microprocessor in 1971?",
+        "options": ["Micral", "Altair 8800", "Apple I", "Commodore PET"],
+        "answer": "Micral"
+    },
+    {
+        "id": 29,
+        "question": "Who is known as the 'Mother of the Internet'?",
+        "options": ["Radia Perlman", "Vint Cerf", "Adele Goldberg", "Sylvia Todd"],
+        "answer": "Radia Perlman"
+    },
+    {
+        "id": 30,
+        "question": "What was the name of the first handheld electronic calculator invented in 1967?",
+        "options": ["HP-35", "Casio Mini", "Sinclair Executive", "Texas Instruments Cal-Tech"],
+        "answer": "HP-35"
+    }
+]

@@ -1,0 +1,184 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "Which generation of computers used vacuum tubes for processing?",
+      "options": ["First generation", "Second generation", "Third generation", "Fourth generation"],
+      "answer": "First generation"
+    },
+    {
+      "id": 2,
+      "question": "The use of Integrated Circuits (ICs) marks the beginning of which computer generation?",
+      "options": ["First generation", "Second generation", "Third generation", "Fourth generation"],
+      "answer": "Third generation"
+    },
+    {
+      "id": 3,
+      "question": "Which generation of computers is known for the use of transistors?",
+      "options": ["Second generation", "Third generation", "Fourth generation", "Fifth generation"],
+      "answer": "Second generation"
+    },
+    {
+      "id": 4,
+      "question": "When did the Fourth generation of computers begin?",
+      "options": ["1950s", "1960s", "1970s", "1980s"],
+      "answer": "1970s"
+    },
+    {
+      "id": 5,
+      "question": "The introduction of microprocessors characterizes which generation of computers?",
+      "options": ["Second generation", "Third generation", "Fourth generation", "Fifth generation"],
+      "answer": "Fourth generation"
+    },
+    {
+      "id": 6,
+      "question": "Which generation of computers is associated with Artificial Intelligence?",
+      "options": ["First generation", "Second generation", "Third generation", "Fifth generation"],
+      "answer": "Fifth generation"
+    },
+    {
+      "id": 7,
+      "question": "Who is known as the father of computer generation?",
+      "options": ["Charles Babbage", "John von Neumann", "Alan Turing", "J. Presper Eckert"],
+      "answer": "John von Neumann"
+    },
+    {
+      "id": 8,
+      "question": "The development of which technology led to the birth of modern computers?",
+      "options": ["Vacuum tubes", "Integrated Circuits", "Transistors", "Microprocessors"],
+      "answer": "Integrated Circuits"
+    },
+    {
+      "id": 9,
+      "question": "Which component replaced vacuum tubes in the Second generation of computers?",
+      "options": ["Transistors", "Integrated Circuits", "Microprocessors", "Nanotechnology"],
+      "answer": "Transistors"
+    },
+    {
+      "id": 10,
+      "question": "In which generation did computers become more affordable and widely used?",
+      "options": ["First generation", "Second generation", "Third generation", "Fourth generation"],
+      "answer": "Third generation"
+    },
+    {
+      "id": 11,
+      "question": "Who coined the term 'Artificial Intelligence'?",
+      "options": ["John McCarthy", "Alan Turing", "Stephen Hawking", "Marvin Minsky"],
+      "answer": "John McCarthy"
+    },
+    {
+      "id": 12,
+      "question": "Which generation of computers is known for the use of large-scale integration (LSI) and very-large-scale integration (VLSI) technologies?",
+      "options": ["Third generation", "Fourth generation", "Fifth generation", "Sixth generation"],
+      "answer": "Fifth generation"
+    },
+    {
+      "id": 13,
+      "question": "The development of which programming language is associated with the Third generation of computers?",
+      "options": ["FORTRAN", "COBOL", "Assembly language", "Pascal"],
+      "answer": "COBOL"
+    },
+    {
+      "id": 14,
+      "question": "Which generation of computers saw the introduction of graphical user interfaces (GUIs)?",
+      "options": ["Second generation", "Third generation", "Fourth generation", "Fifth generation"],
+      "answer": "Fifth generation"
+    },
+    {
+      "id": 15,
+      "question": "When did the Fifth generation of computers emerge?",
+      "options": ["1980s", "1990s", "2000s", "2010s"],
+      "answer": "1980s"
+    },
+    {
+      "id": 16,
+      "question": "Who designed the first general-purpose electronic digital computer, ENIAC?",
+      "options": ["John Mauchly and J. Presper Eckert", "Alan Turing", "John von Neumann", "Charles Babbage"],
+      "answer": "John Mauchly and J. Presper Eckert"
+    },
+    {
+      "id": 17,
+      "question": "Which generation of computers is characterized by the use of personal computers, laptops, and smartphones?",
+      "options": ["Fifth generation", "Sixth generation", "Seventh generation", "Eighth generation"],
+      "answer": "Sixth generation"
+    },
+    {
+      "id": 18,
+      "question": "The invention of which technology led to the miniaturization of electronic components in computers?",
+      "options": ["Nanotechnology", "Quantum computing", "Biotechnology", "Microtechnology"],
+      "answer": "Nanotechnology"
+    },
+    {
+      "id": 19,
+      "question": "Which generation of computers saw advancements in parallel processing and supercomputing?",
+      "options": ["Fifth generation", "Sixth generation", "Seventh generation", "Eighth generation"],
+      "answer": "Seventh generation"
+    },
+    {
+      "id": 20,
+      "question": "When did the concept of cloud computing start gaining popularity?",
+      "options": ["1990s", "2000s", "2010s", "2020s"],
+      "answer": "2000s"
+    },
+    {
+      "id": 21,
+      "question": "Which company introduced the first personal computer, the Altair 8800?",
+      "options": ["IBM", "Apple", "Microsoft", "Intel"],
+      "answer": "Intel"
+    },
+    {
+      "id": 22,
+      "question": "The development of which programming language revolutionized software development in the Seventh generation of computers?",
+      "options": ["Python", "Java", "C++", "Ruby"],
+      "answer": "Python"
+    },
+    {
+      "id": 23,
+      "question": "Which generation of computers introduced the concept of quantum computing?",
+      "options": ["Fifth generation", "Sixth generation", "Seventh generation", "Eighth generation"],
+      "answer": "Eighth generation"
+    },
+    {
+      "id": 24,
+      "question": "Who is credited with the invention of the World Wide Web (WWW)?",
+      "options": ["Tim Berners-Lee", "Bill Gates", "Steve Jobs", "Larry Page"],
+      "answer": "Tim Berners-Lee"
+    },
+    {
+      "id": 25,
+      "question": "The development of which technology is considered crucial for the advancement of Artificial Intelligence in computers?",
+      "options": ["Machine learning", "Blockchain", "Virtual reality", "Augmented reality"],
+      "answer": "Machine learning"
+    },
+    {
+      "id": 26,
+      "question": "Which generation of computers is focused on creating intelligent machines that can simulate human behavior?",
+      "options": ["Fifth generation", "Sixth generation", "Seventh generation", "Eighth generation"],
+      "answer": "Sixth generation"
+    },
+    {
+      "id": 27,
+      "question": "When did the first computer virus, the 'Creeper', appear?",
+      "options": ["1960s", "1970s", "1980s", "1990s"],
+      "answer": "1970s"
+    },
+    {
+      "id": 28,
+      "question": "The development of which technology led to the rise of social media platforms and online communication?",
+      "options": ["Internet", "Bluetooth", "Wi-Fi", "CD-ROM"],
+      "answer": "Internet"
+    },
+    {
+      "id": 29,
+      "question": "Which generation of computers introduced the concept of wearable technology and Internet of Things (IoT)?",
+      "options": ["Seventh generation", "Eighth generation", "Ninth generation", "Tenth generation"],
+      "answer": "Eighth generation"
+    },
+    {
+      "id": 30,
+      "question": "Who is considered the pioneer of modern computer science and artificial intelligence?",
+      "options": ["Alan Turing", "Marvin Minsky", "John McCarthy", "Herbert Simon"],
+      "answer": "Alan Turing"
+    }
+  ]
+}

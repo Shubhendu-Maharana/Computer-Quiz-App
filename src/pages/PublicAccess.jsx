@@ -3,16 +3,16 @@ import { Navigate } from "react-router-dom";
 import { IoPersonCircleSharp } from "react-icons/io5";
 
 const PublicAccess = () => {
-  const [redirectToHomepage, setRedirectToHomepage] = useState(false);
+  const [redirectToQuizPage, setRedirectToQuizPage] = useState(false);
   const handleStartQuiz = (event) => {
     event.preventDefault();
     const name = event.target.elements.name.value;
     localStorage.setItem("username", name);
-    setRedirectToHomepage(true);
+    setRedirectToQuizPage(true);
   };
 
-  if (redirectToHomepage) {
-    return <Navigate to="/Computer-Quiz-App/homepage" />;
+  if (redirectToQuizPage) {
+    return <Navigate to="/Computer-Quiz-App/Quiz" />;
   }
 
   return (
