@@ -13,7 +13,7 @@ const Result = ({ correctAnswers, totalQuestions }) => {
   };
 
   if (redirectToHomepage) {
-    return <Navigate to="/" />;
+    return <Navigate to="/Computer-Quiz-App/" />;
   }
 
   const progressWidth = (100 / totalQuestions) * correctAnswers + "%";
