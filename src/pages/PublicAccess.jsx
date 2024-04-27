@@ -12,13 +12,15 @@ const PublicAccess = () => {
   };
 
   if (redirectToHomepage) {
-    return <Navigate to="/computer-quiz-app/homepage" />;
+    return <Navigate to="/Computer-Quiz-App/homepage" />;
   }
 
   return (
     <div className="h-screen flex flex-col justify-between lg:items-center lg:justify-around p-6 bg-gradient-to-r from-purple-500 to-pink-500">
       <div className="flex items-center justify-center h-full">
-        <span className="text-6xl text-white uppercase font-bold">Quiz App</span>
+        <span className="text-6xl text-white uppercase font-bold">
+          Quiz App
+        </span>
       </div>
       <div className="bg-white px-6 py-10 lg: rounded-2xl flex flex-col items-center lg:w-1/3 shadow-xl">
         <div>

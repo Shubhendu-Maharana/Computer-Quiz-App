@@ -9,12 +9,12 @@ const Result = ({ correctAnswers, totalQuestions }) => {
 
   const handleLogout = () => {
     localStorage.removeItem("username");
-    setRedirectToHomepage(true);
+    // setRedirectToHomepage(true);
   };
 
-  if (redirectToHomepage) {
-    return <Navigate to="/Computer-Quiz-App/" />;
-  }
+  // if (redirectToHomepage) {
+  //   return <Navigate to="/Computer-Quiz-App/" />;
+  // }
 
   const progressWidth = (100 / totalQuestions) * correctAnswers + "%";
 
@@ -49,7 +49,7 @@ const Result = ({ correctAnswers, totalQuestions }) => {
               Logout
             </button>
             <button
-              to="/computer-quiz-app/homepage"
+              to="/Computer-Quiz-App/homepage"
               className="btn bg-pink-500 text-white hover:bg-purple-500 hover:text-black"
             >
               Retry

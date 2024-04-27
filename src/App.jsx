@@ -8,8 +8,8 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/computer-quiz-app" element={<PublicAccess />} />
-        <Route path="/computer-quiz-app/homepage" element={<Homepage />} />
+        <Route path="/Computer-Quiz-App/" element={<PublicAccess />} />
+        <Route path="/Computer-Quiz-App/homepage" element={<Homepage />} />
       </Routes>
     </>
   );
