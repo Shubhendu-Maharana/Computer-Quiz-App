@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import questionData from "../../Questions/Questions.json";
-import Result from "../../Result/Result";
+import questionData from "../components/Questions/Questions.json";
+import Result from "../components/Result/Result";
 import { Navigate } from "react-router-dom";
 
 const Homepage = () => {
@@ -89,7 +89,10 @@ const Homepage = () => {
             {questions[currentIndex].question}
           </p>
         </div>
-        <form autoComplete="off" className="form-control lg:min-w-96 w-full py-5 px-2.5 h-max gap-5 mt-auto text-center text-black justify-evenly *:rounded-xl *:p-5 *:w-full lg:items-center lg:*:cursor-pointer text-xl">
+        <form
+          autoComplete="off"
+          className="form-control lg:min-w-96 w-full py-5 px-2.5 h-max gap-5 mt-auto text-center text-black justify-evenly *:rounded-xl *:p-5 *:w-full lg:items-center lg:*:cursor-pointer text-xl"
+        >
           {questions[currentIndex].options.map((option, index) => (
             <label
               key={index}
