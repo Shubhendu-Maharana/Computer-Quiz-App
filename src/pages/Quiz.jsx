@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import CryptoJS from "crypto-js";
 import QuizDataContext from "../components/Utils/Context/QuizDataContext";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import { useContext } from "react";
 
 const Quiz = () => {
@@ -12,9 +12,13 @@ const Quiz = () => {
   const [quizGenerated, setQuizGenerated] = useState(false);
   const [error, setError] = useState(false);
 
+  if(!username) {
+    return <Navigate to="/Computer-Quiz-App/" />
+  }
+
   const API_URL = "https://api.openai.com/v1/chat/completions";
   const ENCRYPTED_API_KEY =
-    "U2FsdGVkX1+9GvwYHmkJiU0sHPs3LDKFYlBJtlOqRzCn6w9Y87UvDgAfufaLfaXL+JUu9ktBj/UeP6Dkq02mL7i7AtnztsCTZ/TJJqk5Q3k=";
+    "U2FsdGVkX182LMlOeBL/ajj6laWVCRso4H+6LjJgTpL4iDv4vBu6uAxJEc8bpOOh5YqtSb3wBOFqNgLZPXJV5AIOjhN2m1lA2l3IQNRAm8s=";
   const API_KEY = CryptoJS.AES.decrypt(
     ENCRYPTED_API_KEY.toString(),
     "shubhendu"
