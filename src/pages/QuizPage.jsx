@@ -11,18 +11,8 @@ const QuizPage = () => {
   const [correctOption, setCorrectOption] = useState({});
   const [score, setScore] = useState(0);
 
-  const [redirectToLogin, setRedirectToLogin] = useState(false);
-
-  useEffect(() => {
-    const username = localStorage.getItem("username");
-    if (!username) {
-      setRedirectToLogin(true);
-    }
-  }, []);
-
-  if (redirectToLogin) {
-    return <Navigate to="/Computer-Quiz-App/" />;
-  }
+  const username = localStorage.getItem("username");
+  if (!username) return <Navigate to="/Computer-Quiz-App/" />;
 
   const verifyAnswer = (option) => {
     if (!selectedOptions[currentIndex]) {

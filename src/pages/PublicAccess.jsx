@@ -3,6 +3,7 @@ import { Navigate } from "react-router-dom";
 import { IoPersonCircleSharp } from "react-icons/io5";
 
 const PublicAccess = () => {
+  localStorage.removeItem("username");
   const [redirectToQuizPage, setRedirectToQuizPage] = useState(false);
   const handleStartQuiz = (event) => {
     event.preventDefault();

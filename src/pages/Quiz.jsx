@@ -5,16 +5,14 @@ import { Link, Navigate } from "react-router-dom";
 import { useContext } from "react";
 
 const Quiz = () => {
-  const username = localStorage.getItem("username");
   const [topic, setTopic] = useState("");
   const [loading, setLoading] = useState(false);
   const { setQuizData } = useContext(QuizDataContext);
   const [quizGenerated, setQuizGenerated] = useState(false);
   const [error, setError] = useState(false);
+  const username = localStorage.getItem("username");
 
-  if(!username) {
-    return <Navigate to="/Computer-Quiz-App/" />
-  }
+  if (!username) return <Navigate to="/Computer-Quiz-App/" />;
 
   const API_URL = "https://api.openai.com/v1/chat/completions";
   const ENCRYPTED_API_KEY =
