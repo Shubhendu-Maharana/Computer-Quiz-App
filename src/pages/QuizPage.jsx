@@ -45,7 +45,10 @@ const QuizPage = () => {
     setCurrentIndex(currentIndex - 1);
   };
 
-  const progressWidth = ((currentIndex + 1) / quizData.length) * 100 + "%";
+  const progressWidth =
+    currentIndex === 0
+      ? "0%"
+      : ((currentIndex + 1) / quizData.length) * 100 + "%";
 
   return (
     <div className="flex flex-col justify-between lg:items-center min-h-screen bg-gradient-to-t from-purple-500 to-pink-500">
