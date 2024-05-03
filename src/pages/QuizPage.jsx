@@ -12,7 +12,7 @@ const QuizPage = () => {
   const [score, setScore] = useState(0);
 
   const username = localStorage.getItem("username");
-  if (!username) return <Navigate to="/Computer-Quiz-App/" />;
+  if (!username || !quizData) return <Navigate to="/Computer-Quiz-App/" />;
 
   const verifyAnswer = (option) => {
     if (!selectedOptions[currentIndex]) {

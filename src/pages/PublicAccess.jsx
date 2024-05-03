@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
 import { IoPersonCircleSharp } from "react-icons/io5";
 
 const PublicAccess = () => {
-  localStorage.removeItem("username");
   const [redirectToQuizPage, setRedirectToQuizPage] = useState(false);
   const handleStartQuiz = (event) => {
     event.preventDefault();
@@ -11,6 +10,10 @@ const PublicAccess = () => {
     localStorage.setItem("username", name);
     setRedirectToQuizPage(true);
   };
+
+  useEffect(() => {
+    localStorage.removeItem("username");
+  }, []);
 
   if (redirectToQuizPage) {
     return <Navigate to="/Computer-Quiz-App/Quiz" />;
