@@ -3,6 +3,7 @@ import CryptoJS from "crypto-js";
 import QuizDataContext from "../components/Utils/Context/QuizDataContext";
 import { Link, Navigate } from "react-router-dom";
 import { useContext } from "react";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 
 const Quiz = () => {
   const [topic, setTopic] = useState("");
@@ -14,36 +15,32 @@ const Quiz = () => {
 
   if (!username) return <Navigate to="/Computer-Quiz-App/" />;
 
-  const API_URL = "https://api.openai.com/v1/chat/completions";
   const ENCRYPTED_API_KEY =
-    "U2FsdGVkX182LMlOeBL/ajj6laWVCRso4H+6LjJgTpL4iDv4vBu6uAxJEc8bpOOh5YqtSb3wBOFqNgLZPXJV5AIOjhN2m1lA2l3IQNRAm8s=";
-  const API_KEY = CryptoJS.AES.decrypt(
+    "U2FsdGVkX1+XKlP/ZMWUbNw2VGq51G1UvrZASn+jtK7sHLV4n7FB+xq3G0LztUaeiFDhnCpMoK0cf1X4bVYSeQ==";
+    
+  const GEMINI_API_KEY = CryptoJS.AES.decrypt(
     ENCRYPTED_API_KEY.toString(),
     "shubhendu"
   ).toString(CryptoJS.enc.Utf8);
-  const query = `give 30 questions about ${topic} in json format as like, id: starts from 1 and so on, question: conatains actual question, options: array of 4 options, answer: contains actual answer from options don't wrap these with any name`;
+
+  const query = `give 10 questions about ${topic} in json format as like, id: starts from 1 and so on, question: conatains actual question, options: array of 4 options, answer: contains actual answer from options don't wrap these with any name`;
 
   const generateQuestions = async (event) => {
     event.preventDefault();
     setLoading(true);
 
-    const requestOptions = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${API_KEY}`,
-      },
-      body: JSON.stringify({
-        model: "gpt-3.5-turbo",
-        messages: [{ role: "user", content: query }],
-      }),
-    };
-
     try {
-      const res = await (await fetch(API_URL, requestOptions)).json();
-      const data = res.choices[0].message.content;
+      const genAi = new GoogleGenerativeAI(GEMINI_API_KEY);
+      const model = genAi.getGenerativeModel({
+        model: "gemini-1.5-pro-latest",
+      });
+
+      const result = await model.generateContent(query);
+      const resultText = result.response.candidates[0].content.parts[0].text;
+      let startIndex = resultText.indexOf("[");
+      let endIndex = resultText.lastIndexOf("]");
+      let data = resultText.substring(startIndex, endIndex + 1); // Delete any useless characters. Fixes JSON parsing error from Gemini response
       setQuizData(JSON.parse(data));
-      //   localStorage.setItem("quizData", JSON.stringify(data));
       setLoading(false);
       setQuizGenerated(true);
       setError(false); // Reset error state
