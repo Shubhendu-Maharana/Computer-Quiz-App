@@ -16,7 +16,7 @@ const Quiz = () => {
   if (!username) return <Navigate to="/Computer-Quiz-App/" />;
 
   const ENCRYPTED_API_KEY =
-    "U2FsdGVkX1+gPNzfXeuovrd6Twhj3X543rqi0MTK+2u2U2ZzCUAlR9810HOGigwW+gfBb+DsDhHkjrKrLtjVig==";
+    "U2FsdGVkX18xxO2qurr9nx8+91DSMRBdZrp6BkIlCWC2zBYMWlBXzpvBeZQz4kcFah2a+QGVpHKnxorG2r6WIg==";
     
   const GEMINI_API_KEY = CryptoJS.AES.decrypt(
     ENCRYPTED_API_KEY.toString(),
