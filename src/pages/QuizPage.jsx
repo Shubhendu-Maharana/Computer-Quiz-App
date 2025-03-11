@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Result from "../components/Result/Result";
 import { Navigate } from "react-router-dom";
 import { useContext } from "react";
-import QuizDataContext from "../components/Utils/Context/QuizDataContext";
+import QuizDataContext from "../Context/QuizDataContext";
 
 const QuizPage = () => {
   const { quizData } = useContext(QuizDataContext);
@@ -12,7 +12,7 @@ const QuizPage = () => {
   const [score, setScore] = useState(0);
 
   const username = localStorage.getItem("username");
-  if (!username || !quizData) return <Navigate to="/Computer-Quiz-App/" />;
+  if (!username || !quizData) return <Navigate to="/" />;
 
   const verifyAnswer = (option) => {
     if (!selectedOptions[currentIndex]) {

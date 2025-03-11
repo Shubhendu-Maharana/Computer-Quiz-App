@@ -14,7 +14,7 @@ const Result = ({ correctAnswers, totalQuestions }) => {
   };
 
   if (redirectToLoginPage) {
-    return <Navigate to="/Computer-Quiz-App/" />;
+    return <Navigate to="/" />;
   }
 
   const handleReGen = () => {
@@ -22,7 +22,7 @@ const Result = ({ correctAnswers, totalQuestions }) => {
   };
 
   if (redirectToRegen) {
-    return <Navigate to="/Computer-Quiz-App/Quiz/" />;
+    return <Navigate to="/Quiz" />;
   }
 
   const progressWidth = (100 / totalQuestions) * correctAnswers + "%";

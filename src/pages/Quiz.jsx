@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import CryptoJS from "crypto-js";
-import QuizDataContext from "../components/Utils/Context/QuizDataContext";
+import QuizDataContext from "../Context/QuizDataContext";
 import { Link, Navigate } from "react-router-dom";
 import { useContext } from "react";
 import { GoogleGenerativeAI } from "@google/generative-ai";
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
 const Quiz = () => {
   const [topic, setTopic] = useState("");
@@ -13,15 +14,7 @@ const Quiz = () => {
   const [error, setError] = useState(false);
   const username = localStorage.getItem("username");
 
-  if (!username) return <Navigate to="/Computer-Quiz-App/" />;
-
-  const ENCRYPTED_API_KEY =
-    "U2FsdGVkX18xxO2qurr9nx8+91DSMRBdZrp6BkIlCWC2zBYMWlBXzpvBeZQz4kcFah2a+QGVpHKnxorG2r6WIg==";
-    
-  const GEMINI_API_KEY = CryptoJS.AES.decrypt(
-    ENCRYPTED_API_KEY.toString(),
-    "shubhendu"
-  ).toString(CryptoJS.enc.Utf8);
+  if (!username) return <Navigate to="/" />;
 
   const query = `give 10 questions about ${topic} in json format as like, id: starts from 1 and so on, question: conatains actual question, options: array of 4 options, answer: contains actual answer from options don't wrap these with any name`;
 
@@ -30,7 +23,7 @@ const Quiz = () => {
     setLoading(true);
 
     try {
-      const genAi = new GoogleGenerativeAI(GEMINI_API_KEY);
+      const genAi = new GoogleGenerativeAI(API_KEY);
       const model = genAi.getGenerativeModel({
         model: "gemini-1.5-pro-latest",
       });
@@ -114,7 +107,7 @@ const Quiz = () => {
             {quizGenerated ? (
               <Link
                 to={{
-                  pathname: "/Computer-Quiz-App/QuizPage",
+                  pathname: "/QuizPage",
                 }}
                 className="btn bg-pink-500 text-white font-bold text-lg border-none hover:bg-pink-600"
               >
