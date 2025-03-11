@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import CryptoJS from "crypto-js";
 import QuizDataContext from "../Context/QuizDataContext";
 import { Link, Navigate } from "react-router-dom";
 import { useContext } from "react";
